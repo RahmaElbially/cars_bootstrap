@@ -1,0 +1,582 @@
+:root{
+    --darkblue-color: #164863;
+    --darkblue-70-color: #427D9D;
+    --lightblue-30-color: #9BBEC8;
+    --lightblue-color: #DDF2FD;
+    --blue:#113946ca;
+    --bage: #BCA37F;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--lightblue-30-color); 
+    border-radius: 8px;
+    height: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--darkblue-70-color); 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.focus:focus{
+    box-shadow: none;
+}
+.grediant-text{
+    background: -webkit-linear-gradient(90deg,#182B3A,#20A4F3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bold; 
+}
+body{
+    background-color: var(--darkblue-color);
+}
+/* Start Nav Bar */
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #FFF;
+}
+.navbar{
+    opacity: 0.8;
+}
+.navbar .brandName{
+    border-right: 1.5px solid var(--darkblue-color);
+    transition: 0.3s;
+}
+.navbar .brandName:hover{
+    text-shadow: 1px 1px 15px rgba(22, 72, 99,0.7);
+}
+.navbar .navbar-toggler{
+    color: var(--darkblue-color);
+    border: 2px solid var(--lightblue-color);
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--darkblue-color);
+}
+.navbar .nav-link{
+    font-size: 18px;
+    color: var( --darkblue-70-color) !important;
+}
+.navbar .nav-link:hover::first-letter{
+    font-weight: bold; 
+    color: var(--lightblue-30-color);
+}
+.navbar .nav-link:hover{
+    font-weight: bold; 
+    text-shadow: 1px 1px 15px rgba(22, 72, 99,0.7);
+    text-shadow: -1px 1px 15px rgba(22, 72, 99,0.7);
+    margin-top: 3px;
+}
+.navbar .dropdown{
+    border-top: 2px solid var(--lightblue-30-color);
+    border-left: 2px solid var(--lightblue-30-color);
+    border-bottom: 2px solid var(--darkblue-70-color);
+    border-right: 2px solid var(--darkblue-70-color);
+    border-radius: 8px;
+}
+.navbar .dropdown .dropdown-menu{
+    opacity: 0.8;
+}
+.navbar .dropdown .dropdown-item{
+    color: var(--darkblue-color);
+}
+.navbar .form-control{
+    background-color: transparent;
+    border: 1px solid var(--darkblue-70-color); 
+}
+.navbar .form-control::placeholder{
+    font-size: 18px;
+    color: var(--darkblue-70-color); 
+}
+.navbar .btn{
+    background-color: var(--darkblue-color);
+}
+.navbar .btn:hover{
+    background-color: transparent;
+    color: var(--darkblue-70-color) !important;
+    border: 2px solid var(--darkblue-70-color);;
+}
+/* End Nav Bar */
+
+/* Start Modal */
+.modalSection .modal-header{
+    background-color: var(--darkblue-70-color);
+}
+.modalSection .modal-body .form-label{
+    color: var(--darkblue-70-color);
+}
+.modalSection .modal-body .form-control{
+    color: var(--darkblue-70-color);
+    border-color: var(--lightblue-30-color);
+}
+.modalSection .modal-body .form-switch{
+    color: var(--darkblue-70-color);
+}
+.modalSection .modal-body input[type="checkbox"]:checked{
+    background-color: var(--darkblue-70-color);
+}
+.modalSection .modal-footer button{
+    background-color: var(--darkblue-70-color);
+    border: none;
+}
+.modalSection .modal-footer button:hover{
+    color: var(--darkblue-color) !important;
+    background-color: var(--lightblue-color);
+}
+/* End Modal */
+
+/* Start Aside */
+.aside{
+    z-index: 5;
+    right: 2%;
+    top: 23%;
+}
+.aside ul li a{
+    font-size: 55px;
+    color: var(--darkblue-70-color);
+}
+.aside ul li a:hover{
+    color: var(--lightblue-color);
+}
+/* End Aside */
+
+/* Start Slider Section */
+.slider .carousel-caption{
+    background-color: rgba(66, 125, 157,0.5);
+}
+.slider .carousel-inner .btn{
+    background-color: transparent;
+    border: 2px solid var(--darkblue-color);
+}
+.slider .carousel-inner .btn:hover{
+    background-color: var(--darkblue-color) !important;
+}
+/* End Slider Section */
+
+/* Start Welcome Section */
+.welcome{
+    background-color: var(--lightblue-30-color);
+}
+.welcome .welcomeData p{
+    color: var(--darkblue-color);
+    text-align: justify;
+}
+.welcome .welcomeData .btn{
+    background-color: var(--darkblue-color);
+}
+.welcome .welcomeData .btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--darkblue-70-color);
+}
+.welcome .welcomeImage img{
+    height: 300px;
+    width: 400px;
+    border-radius: 50px 20px;
+    transition: 1s;
+}
+.welcome .welcomeImage .img1{
+    top: 0;
+    left: 45%;
+    z-index: 1;
+}
+.welcome .welcomeImage .img2{
+    top: 20%;
+    right: 40%;
+}
+.welcome .welcomeImage img:hover{
+    transform: scale(1.2);
+}
+/* End Welcome Section */
+
+/* Start Best Seller Section */
+.bestSeller .accordion .accordion-item{
+    background-color: var(--lightblue-color); 
+}
+.bestSeller .accordion .accordion-body p{
+    color: var(--darkblue-color);
+    font-size: 18px;
+}
+.bestSeller .accordion .accordion-body .btn{
+    background-color: var(--darkblue-color);
+}
+.bestSeller .accordion .accordion-body .btn:hover{
+    background-color: #FFF;
+    color: var(--darkblue-color) !important;
+}
+/* End Best Seller Section */
+
+/* Start Contact Us Section */
+.ContactUSBody form .input-group-text,
+.ContactUSBody .btn{
+    background-color: var(--darkblue-color);
+}
+.ContactUSBody form .form-floating label,
+.ContactUSBody .form-label,
+.ContactUSBody .form-control,
+.ContactUSBody .form-check-label,
+.ContactUSBody .form-floating{
+    color: var(--darkblue-70-color);
+}
+.ContactUSBody .form-control{
+    border-color: var(--lightblue-30-color);
+}
+.ContactUSBody .btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--darkblue-color);
+    color: var(--darkblue-70-color) !important;
+}
+.ContactUSBody form input[type="checkbox"]:checked,
+.ContactUSBody form input[type="radio"]:checked{
+    background-color: var(--darkblue-70-color);
+}
+input[type="file"]{
+    color: var(--darkblue-70-color);
+}
+/* End Contact Us Section */
+
+/* Start Background Section */
+.background .backgroundImage{
+    background-image: url(../Images/car\ 7.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+    margin-top: 90px;
+}
+/* End Background Section */
+
+/* Start Our Car Section */
+.ourCars .card{
+    background-color: var(--lightblue-30-color) !important;
+    position: relative;
+}
+.ourCars .card .card-body{
+    z-index: 1;
+}
+.ourCars .card .card-title{
+    color: var(--darkblue-70-color);
+}
+.ourCars .card .card-text{
+    color: var(--lightblue-color);
+}
+.ourCars .card .btn{
+    background-color: var(--darkblue-color);
+    font-size: 18px;
+    z-index: 500;
+}
+.ourCars .card .btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--darkblue-color);
+}
+.ourCars .card::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(221, 242, 253, 0.3);
+    transition: 0.5s;
+}
+.ourCars .card:hover::after{
+    width: 100%;
+    height: 100%;
+}
+/* End Our Car Section */
+
+/* Start Second Background Section */
+.secondBackground .backgroundImage{
+    background-image: url(../Images/car\ 15.jpg);
+    min-height: 400px;
+}
+/* End Second Background Section */
+
+/* Start Our Team Section */
+.ourTeam  .card{
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.ourTeam .card .card-body{
+    transition: 0.3s;
+}
+.ourTeam  .card .cardBackground{
+    border-radius: 30px;
+    opacity: 0.3;
+}
+.ourTeam .card .card-footer{
+    margin-top: 100px;
+}
+.ourTeam .card .card-footer .cardFooterImage{
+    border: 2px solid var(--darkblue-70-color);
+}
+.ourTeam .card:hover{
+    cursor: pointer;
+    background-color:rgba(22, 72, 99,0.7) !important;
+    transform: scale(0.9);
+    transform: translateY(25px);
+}
+.ourTeam .card:hover .teamBody{
+    transform: translateY(25px);
+}
+/* End Our Team Section */
+
+/* Start Company News Section */
+.companyNews .companyNewsHead{
+    background-color: var(--lightblue-color);
+}
+.companyNews .newsContent{
+    overflow: hidden;
+    background: -webkit-linear-gradient(left,#C3CBDC,#EDF1F4);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.3);
+}
+.companyNews .content2{
+    background: -webkit-linear-gradient(left,#FFFFFF,#91A6FF);
+}
+.companyNews .content3{
+    background: -webkit-linear-gradient(left,#DEE4EA,#F9FCFF);
+}
+.companyNews .content4{
+    background: -webkit-linear-gradient(left,#DCE8E0,#D2D8D6);
+}
+.companyNews .newsContent .newsImage{
+    background-image: url(../Images/car\ 16.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 410px;
+    clip-path: polygon(5% 0, 100% 0%, 100% 100%, 19% 100%);
+    transition: 0.3s;
+}
+.companyNews .newsContent .newsData .newsDataTitle h3 a,
+.companyNews .newsContent .newsData .newsDataTitle small,
+.companyNews .newsData .newsDataP p,
+.companyNews .newsData .newsDataFooter li{
+    color: var(--darkblue-color);
+}
+.companyNews .newsContent .newsData .newsDataTitle h3 a:hover{
+    color: var(--darkblue-70-color);
+}
+.companyNews .newsData .newsDataBar{
+    width: 70px;
+    height: 5px;
+    background-color: var(--lightblue-30-color);
+    border-radius: 10px;
+    transition: 0.3s;
+} 
+.companyNews .content2 .newsDataBar{
+    background-color: var(--darkblue-color);
+}
+.companyNews .content3 .newsDataBar{
+    background-color: var(--bage);
+}
+.companyNews .content4 .newsDataBar{
+    background-color: var(--darkblue-70-color);
+}
+.companyNews .newsData .newsDataP p{
+    text-align: justify;
+    margin-bottom: 70px;
+} 
+.companyNews .newsData .newsDataFooter i{
+    color: var(--darkblue-70-color);
+} 
+.companyNews .newsData .newsDataFooter li:hover{
+    cursor: pointer;
+    background-color: var(--lightblue-color) !important;
+}
+.companyNews .newsContent:hover .newsImage{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.companyNews .newsContent:hover .newsDataBar{
+    width: 150px;
+}
+.companyNews .newsContentLeft .newsImage{
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+.companyNews .newsContent .news2{
+    background-image: url(../Images/car\ 17.jpg);
+}
+.companyNews .newsContent .news3{
+    background-image: url(../Images/car\ 18.jpg);
+}
+.companyNews .newsContent .news4{
+    background-image: url(../Images/car\ 19.jpg);
+}
+/* End Company News Section */
+
+/* Start Join Us Section */
+.joinUs .joinUsHead{
+    background-color: var(--lightblue-color);
+}
+.joinUs .joinUsContent{
+    margin-top: 50px !important;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.5);
+}
+.joinUs .joinUsContent p,
+.joinUs .joinUsContent a{
+   color: var(--lightblue-30-color);
+}
+.joinUs .joinUsContent i{
+    transition: 0.5s;
+}
+.joinUs .joinUsContent i:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.joinUs .joinUsContent a:hover{
+   color: var(--lightblue-color);
+}
+.joinUs .whatsapp,
+.joinUs .twitter,
+.joinUs .facebook,
+.joinUs .instagram{
+    font-size: 100px;
+    color: #25D366;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.joinUs .twitter{
+    color: #00acee;
+}
+.joinUs .facebook{
+    color: #1877F2;
+}
+.joinUs .instagram{
+    color: var(--darkblue-color);
+    background: -webkit-linear-gradient(45deg,#fbad50, #fccc63, #bc2a8d, #8a3ab9 );
+}
+.joinUs .instagram:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+/* End Join Us Section */
+
+/* Start Footer */ 
+footer{
+   margin-top: 100px !important;
+   background-color: var(--lightblue-color);
+}
+footer .column1 .column1Image p,
+footer .column2 .column2Image p,
+footer .column3 .column3Image p{
+    color: var(--darkblue-70-color);
+}
+footer .column1 .column1Contact p{
+    color: var(--darkblue-color);
+    font-size: 18px;
+}
+footer .column2 .column2Contact a{
+    color: var(--darkblue-color);
+    font-size: 18px;
+}
+footer .column2 .column2Contact a:hover{
+    color: var(--darkblue-70-color);
+    text-decoration: underline !important;
+}
+footer .column3 .column3Contact i{
+    color: var(--darkblue-color);
+    font-size: 30px;
+}
+footer .column3 .column3Contact .instagram{
+    font-size: 35px;
+}
+footer .column3 .column3Contact .facebook:hover{
+    color: #1877F2;
+}
+footer .column3 .column3Contact .twitter:hover{
+    color: #00acee;
+}
+footer .column3 .column3Contact .linkedin:hover{
+    color: #0072b1;
+}
+footer .column3 .column3Contact .instagram:hover{
+    background: -webkit-linear-gradient(45deg,#fbad50, #fccc63, #bc2a8d, #8a3ab9 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+footer .column3 .column3Contact .youtube:hover{
+    color: #c4302b;
+}
+footer .column3 .column3Contact .google:hover{
+    color: #db4a39;
+}
+hr{
+    height: 2px !important;
+}
+/* End Footer */ 
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px ) {
+    .companyNews .newsContent .newsImage{
+        height: 435px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px ) {
+    .ourTeam .card:hover{
+        transform: scale(0.9);
+    }
+    .companyNews .newsContent{
+        height: 500px;
+    }
+    .companyNews .newsContent .newsImage{
+        height: 500px;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    .companyNews .newsData .newsDataP p{
+        margin-bottom: 10px;
+    } 
+    .companyNews .newsData .newsDataFooter li{
+        padding: 0 5px !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 765px ) {
+    .ourTeam .card:hover{
+        transform: scale(0.9);
+    }
+    .companyNews .newsContent{
+        height: 600px;
+    }
+    .companyNews .newsContent .newsImage{
+        height: 250px;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    .companyNews .newsData .newsDataP p{
+        margin-bottom: 10px;
+    } 
+}
+@media (max-width: 576px){
+    .ourTeam .card:hover{
+        transform: scale(0.9);
+    }
+    .companyNews .newsContent{
+        width: 95%;
+        height: 550px;
+    }
+    .companyNews .newsContent .newsImage{
+        height: 200px;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    .companyNews .newsData .newsDataP p{
+        margin-bottom: 10px;
+    }
+}
